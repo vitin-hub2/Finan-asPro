@@ -1,0 +1,6 @@
+{
+  "name": "FinançasPro",
+  "description": "Inteligência financeira para decisões reais. Blog completo e profissional de educação financeira, investimentos e finanças pessoais.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
