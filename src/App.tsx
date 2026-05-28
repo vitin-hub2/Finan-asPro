@@ -38,6 +38,7 @@ import ContactView from './components/ContactView';
 import ArticleView from './components/ArticleView';
 import PrivacyView from './components/PrivacyView';
 import TermsView from './components/TermsView';
+import AdsterraBanner from './components/AdsterraBanner';
 
 export default function App() {
   // Navigation Routing States
@@ -381,6 +382,9 @@ export default function App() {
                   ))}
                 </div>
               </section>
+
+              {/* Adsterra Integration Banner */}
+              <AdsterraBanner className="shadow-xs border-[#E8ECF0] max-w-5xl mx-auto" label="Recomendação de Patrocinador" />
 
               {/* 3. Main core articles Feed split layout */}
               <section className="grid grid-cols-1 lg:grid-cols-12 gap-10" id="grid-artigos">

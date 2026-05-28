@@ -8,6 +8,7 @@ import { TrendingUp, TrendingDown, Mail, Tag, ChevronRight, Eye, CheckCircle2 } 
 import { SIMULATED_INDEX_RATES, EXPERT_ARTICLES } from '../data/blogData';
 import { Article, CategoryId } from '../types';
 import Calculadora from './Calculadora';
+import AdsterraBanner from './AdsterraBanner';
 
 interface SidebarProps {
   onNavigate: (page: string, categoryId?: CategoryId | null, articleSlug?: string | null) => void;
@@ -100,6 +101,9 @@ export default function Sidebar({ onNavigate, onTagClick }: SidebarProps) {
       <section>
         <Calculadora />
       </section>
+
+      {/* Adsterra Integration Banner */}
+      <AdsterraBanner className="border-[#E8ECF0]" />
 
       {/* 3. Newsletter Signup Widget */}
       <section className="bg-gradient-to-br from-[#0A3D62] to-[#1B6CA8] rounded-xl p-5 text-white shadow-md relative overflow-hidden">

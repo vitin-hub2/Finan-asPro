@@ -27,6 +27,7 @@ import {
 import { Article, Category, CategoryId, Author } from '../types';
 import { EXPERT_ARTICLES, CATEGORIES, AUTHORS } from '../data/blogData';
 import Sidebar from './Sidebar';
+import AdsterraBanner from './AdsterraBanner';
 
 interface ArticleViewProps {
   articleSlug: string;
@@ -503,6 +504,9 @@ export default function ArticleView({ articleSlug, onNavigate, onLikeChange }: A
               Formular sua rotina de poupança, investimento e eficiência tributária requer perseverança operacional. Nem o Tesouro Selic renderá fortunas da noite para o dia, nem as ações pagarão lucros absurdos aos que operam com impaciência de curto prazo. O patrimônio se estrutura com depósitos calmos, diversificação profissional de classe e consistência mental física. Utilize as ferramentas de simulação do FinançasPro para guiar seus horizontes de tempo e se blindar contra os ruídos especulativos do mercado financeiro de varejo.
             </p>
           </div>
+
+          {/* Adsterra Integration Banner */}
+          <AdsterraBanner className="shadow-xs border-[#E8ECF0]" />
 
           {/* 8. Full-Width elegant Category final subscription CTA */}
           <div className="bg-[#1A1A2E]/5 border border-[#E8ECF0] rounded-xl p-6 text-center space-y-4">
